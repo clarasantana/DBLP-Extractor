@@ -24,6 +24,12 @@ public class Parser {
             this.locator = locator;
         }
 
+	/*The startElement recognizes two situations:
+	if the parser is located at the beginning of an author or
+	editor, the boolean variable 'insidePerson' is true
+	if the parser is on another kind of field, this method
+	just look for 'key'-attributes and stores the key and the
+	recordTag*/
         public void startElement(String namespaceURI, String localName,
                 String rawName, Attributes atts) throws SAXException {
             String k;
