@@ -7,5 +7,5 @@ Instructions:
 1. Move into the same directory the xml file and the codes.
 2. Get into the directory and compile them: javac Parser.java
 3. Start the program with the command: java -mx900M -DentityExpansionLimit=2500000 Parser dblp.xml > out.txt
-4. The result will be storaged on out.txt
+4. The result will be stored on out.txt
 
