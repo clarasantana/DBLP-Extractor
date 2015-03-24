@@ -70,7 +70,8 @@ public class Parser {
                 numberOfPersons = 0;
             }
         }
-
+        
+	/*this method appends the input text to the Value string*/
         public void characters(char[] ch, int start, int length)
                 throws SAXException {
             if (insidePerson)
