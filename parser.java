@@ -45,6 +45,11 @@ public class Parser {
             }
         }
 
+	/*The EndElement stores the name of an author/editor field
+	in the temporary array "persons". When we see the end of a
+	publication record, we copy the information from the 'persons' 
+	array into a new array of the required size and call the 
+	constructor of the Publication class*/
         public void endElement(String namespaceURI, String localName,
                 String rawName) throws SAXException {
             if (rawName.equals("author") || rawName.equals("editor")) {
